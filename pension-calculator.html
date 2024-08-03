@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pension-calculator</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="h-screen flex flex-col justify-center items-center bg-background text-gold text-xl text-center tracking-wide font-paragraph">
+
+  <p class="my-3">How much do you currently earn per month</p>
+  <input type="text" class="my-3 bg-form-box rounded focus:outline-none focus:ring-1 px-2 py-1 focus:ring-gold" id="input-earn"> 
+
+<p class="my-3">How long have you been working at your current job month</p>
+  <input type="text" class="my-3 bg-form-box rounded focus:outline-none focus:ring-1 px-2 py-1 focus:ring-gold" id="input-job"> 
+
+<p class="my-3">How often does your pay increase (in months)<p>
+  <input type="text" class="my-3 bg-form-box rounded focus:outline-none focus:ring-1 px-2 py-1 focus:ring-gold" id="input-pay">
+  
+<p class="my-3">How much does your pay increase by (in percentages)<p>
+  <input type="text" class="my-3 bg-form-box rounded focus:outline-none focus:ring-1 px-2 py-1 focus:ring-gold" id="input-increase"> 
+      
+ 
+ <div class="flex items-center flex-row">
+
+  <button class="px-4 py-1 m-2 mt-8 bg-button-background border-gold border rounded" id="input-btn"> Enter </button>
+<button class="px-4 py-1 m-2 mt-8 bg-button-background border-gold border rounded" id="delete-btn"> Clear </button>
+
+ </div> 
+  
+
+  
+  
+  <p class="invisible my-3" id="invisible-text-value">This is how much pension you pay per month</p>
+<span class="my-3" id="tax-value"></span>
+
+<p class="invisible my-3" id="invisible-text-amount">This is how much pension you have</p>
+<span class="my-3" id="tax-amount"></span>
+
+
+
+
+<style>
+  .invisible {
+      visibility: hidden;
+  }
+</style>
+
+  <script  src="pension-calculator.js"></script>
+</body>
+</html>
